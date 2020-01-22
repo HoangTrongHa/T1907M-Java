@@ -1,4 +1,8 @@
-package PACKAGE_NAME;
+package Ex1;
 
-public class Tamgiacvuong {
+public class Tamgiacvuong extends Tamgiacthuong {
+    public Tamgiacvuong(double a, double b, double c) {
+        super(a, b, c);
+    }
+
 }
