@@ -30,8 +30,12 @@ public class Human {
         return year;
     }
 
-
+//nap trong
     public void getInfo() {
         System.out.println();
     }
+    public void getINfo(int a){
+        System.out.println("hello");
+    }
+//    ghi de
 }

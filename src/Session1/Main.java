@@ -1,5 +1,7 @@
 package Session1;
 
+import Sesion1_Demo.Toyota;
+
 public class Main {
     public static void main(String[] args) {
         Human h = new Human("Xin chao ong tuong Ha co");
@@ -12,6 +14,10 @@ public class Main {
         System.out.println("chiec xe nay la\n" + c.year);
         System.out.println("Type" + c.typeCar);
 
+Human ah = new Human();
+ah.getInfo();
 
+        Toyota sh = new Toyota();
+        sh.getInfo();
     }
 }
