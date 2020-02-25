@@ -4,7 +4,6 @@ public abstract class Student {
     public String Name;
     public int Year;
     public String Studentcode;
-
     public abstract void showInfo();
     public abstract void study();
     public abstract void playgame();
