@@ -1,76 +1,82 @@
 package HomeWork;
 
-public class New implements Inews {
-    int Id;
+public abstract class New implements Inews {
+    int ID;
     String Title;
-    String PublisDate;
+    String PublishDate;
     String Author;
     String Content;
-    float AvengeRate;
+    float AverageRate;
 
     @Override
     public void Display() {
-        System.out.println(""+getTitle());
-        System.out.println(""+getAuthor());
-        System.out.println(""+getContent());
-        System.out.println(""+getPublisDate());
-        System.out.println(""+getAvengeRate());
+        System.out.println("ID : "+getID());
+        System.out.println("Title : "+getTitle());
+        System.out.println("PublishDate : "+getAuthor());
+        System.out.println("Author : "+getContent());
+        System.out.println("Content : "+getPublishDate());
+        System.out.println("AverageRate : "+getAverageRate());
     }
+
 
     public New() {
     }
 
-    public New(int id, String title, String publisDate, String author, String content, float avengeRate) {
-        Id = id;
-        Title = title;
-        PublisDate = publisDate;
-        Author = author;
-        Content = content;
-        AvengeRate = avengeRate;
-    }
-
-    public int getId() {
-        return Id;
+    public New(int ID,String title, String publishDate, String author, String content, float averageRate) {
+        this.ID = ID;
+        this.Title = title;
+        this.PublishDate = publishDate;
+        this.Author = author;
+        this.Content = content;
+        this.AverageRate = averageRate;
     }
 
     public String getTitle() {
         return Title;
     }
 
-    public String getPublisDate() {
-        return PublisDate;
+    public void setTitle(String title) {
+        Title = title;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
+    public String getPublishDate() {
+        return PublishDate;
+    }
+
+    public void setPublishDate(String publishDate) {
+        PublishDate = publishDate;
     }
 
     public String getAuthor() {
         return Author;
     }
 
-    public String getContent() {
-        return Content;
-    }
-
-    public float getAvengeRate() {
-        return AvengeRate;
-    }
-
-    public void setId(int id) {
-        Id = id;
-    }
-
-    public void setTitle(String title) {
-        Title = title;
-    }
-
-    public void setPublisDate(String publisDate) {
-        PublisDate = publisDate;
-    }
-
     public void setAuthor(String author) {
         Author = author;
     }
 
+    public String getContent() {
+        return Content;
+    }
+
     public void setContent(String content) {
         Content = content;
+    }
+
+    public float getAverageRate() {
+        return AverageRate;
+    }
+
+    public void setAverageRate(float averageRate) {
+        AverageRate = averageRate;
     }
 }
 
