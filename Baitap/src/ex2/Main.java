@@ -6,8 +6,11 @@ public class Main {
         p.Nhaptuma();
         p.check();
         p.showInfor();
-        System.out.println("Nhap phan so tiep theo");
 
+        System.out.println();
+        System.out.println();
+        System.out.println("Nhap phan so tiep theo");
+        p.rutGon();
 
         Fraction l = new Fraction();
         l.Nhaptuma();
