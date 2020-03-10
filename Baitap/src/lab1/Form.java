@@ -21,7 +21,6 @@ public class Form {
         String name = txtName.getText();
         Integer age ;
         Integer mark;
-
         try {
             age = Integer.parseInt(txtAge.getText());
             mark = Integer.parseInt(txtMark.getText());
@@ -34,11 +33,9 @@ public class Form {
             txtMesseage.setText("Vui long nhap day du thong tin");
         }
     }
-
     public void showArea(String s) {
         txtArea.setText(s);
     }
-
     public void showTable(Connection conn) {
         try {
             Statement stm = conn.createStatement();
@@ -69,9 +66,7 @@ public class Form {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-
     }
-
     @FXML
     public void initialize(){
         try {

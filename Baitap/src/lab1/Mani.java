@@ -18,7 +18,7 @@ public class Mani extends Application {
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Form.fxml"));
         Parent root = fxmlLoader.load();
-        primaryStage.setTitle("Nhap thong tin sinh vien");
+        primaryStage.setTitle("Lan sau cho bai de thoi");
         primaryStage.setScene(new Scene(root, 600, 600));
         primaryStage.show();
     }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="Product.ProductList" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea layoutX="59.0" layoutY="74.0" prefHeight="251.0" prefWidth="495.0" />
+      <TextArea layoutX="72.0" layoutY="89.0" prefHeight="219.0" prefWidth="470.0">
+         <effect>
+            <Shadow color="#296b60" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextArea>
+      <Text layoutX="237.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh sach san pham" wrappingWidth="168.8388671875" />
+      <TextField fx:id="txtName" layoutX="117.0" layoutY="94.0" prefHeight="39.0" prefWidth="398.0" promptText="Name" />
+      <TextField fx:id="txtdescription" layoutX="117.0" layoutY="169.0" prefHeight="39.0" prefWidth="398.0" promptText="Age" />
+      <TextField fx:id="txtmoney" layoutX="117.0" layoutY="247.0" prefHeight="39.0" prefWidth="398.0" promptText="Mark" />
+      <Button onAction="addproduct" layoutX="59.0" layoutY="27.0" mnemonicParsing="false" text="+" textFill="#da1a61" />
+      <Button layoutX="515.0" layoutY="41.0" mnemonicParsing="false" text="Gio hang" />
+   </children>
+</Pane>
