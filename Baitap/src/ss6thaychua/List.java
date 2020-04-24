@@ -7,7 +7,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.ListView;
-
 import java.net.URL;
 import java.sql.ResultSet;
 import java.util.ResourceBundle;
@@ -48,7 +47,6 @@ public class List implements Initializable {
             System.out.println(e.getMessage());
         }
     }
-
     public void addToCart(){
         Product selected = lsView.getSelectionModel().getSelectedItem();
         Main.cart.add(selected);

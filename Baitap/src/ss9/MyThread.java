@@ -1,22 +1,16 @@
 package ss9;
 
 public class MyThread extends Thread{
-    @Override
-    public void run() {
-        super.run();
-        System.out.println("Ten:" + Thread.currentThread().getName());
-        System.out.println("After:" + Thread.currentThread().getName());
-        try {
-            int i = 2;
-            System.out.println("10 so chan dau tien la:");
-            while (i <= 20) {
-                System.out.println(i);
-                i += 2;
+    public void run(){
+        Thread.currentThread().setName("myJavaThread");
+        System.out.println(Thread.currentThread().getName());
+        int j=2;
+        for (int i=0;i<10;i++){
+            System.out.println(j);
+            j+=2;
+            try {
                 Thread.sleep(1500);
-            }
-        } catch (Exception e) {
-
+            }catch (Exception e){}
         }
-
     }
-    }
+}
